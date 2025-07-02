@@ -131,5 +131,97 @@ CREATE TABLE dogs (
     age INT
 );
 
+---
 
+## How do we know it worked
+
+SHOW tables;
+SHOW COLUMNS FROM cats;
+DESC cats;
+
+---
+
+# Deleting Tables
+## CODE: Dropping Tables
+To drop a table:
+
+DROP TABLE <table-name>;
+
+To specifically drop the cats table:
+
+DROP TABLE cats;
+
+---
+
+# Tables Basics Activity
+Create the table:
+
+CREATE TABLE pastries
+  (
+    name VARCHAR(50),
+    quantity INT
+  );
+View tables:
+
+SHOW TABLES;
+
+View details of pastries table:
+
+DESC pastries;
+
+Delete the whole pastries table:
+
+DROP TABLE pastries;
+
+---
+
+## Section 3
+# MySQL Comments
+
+-- Sql comments with (--)
+
+---
+
+# Insert - The Basics
+
+CODE: INSERT: The Basics
+-- Re-create the cats table (I dropped it in a previous section)
+
+
+
+CREATE TABLE cats (
+    name VARCHAR(50),
+    age INT
+);
+
+
+Insert a cat:
+
+INSERT INTO cats (name, age) 
+VALUES ('Samson', 4);
+And another:
+
+INSERT INTO cats (name, age) 
+VALUES ('cariona', 2);
+
+## How do we know that it worked
+
+CODE: A Quick Preview of SELECT
+To view all rows in our table:
+
+SELECT * FROM cats;
+
+---
+
+## Multi_Inserts
+
+CODE: Multi-inserts
+
+-- Multiple Insert:
+
+INSERT INTO cats (name, age) 
+VALUES 
+  ('kamla', 5), 
+  ('dolly', 1), 
+  ('Sively', 15);
 
